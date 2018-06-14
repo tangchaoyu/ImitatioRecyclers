@@ -8,11 +8,11 @@
 *  支持点击分组收缩
 *  支持分组悬停吸顶
 
-![img](https://github.com/tangchaoyu/ImitatioRrecyclers/blob/master/QQ%E5%9B%BE%E7%89%8720180611172335.gif) 
+![img](https://github.com/tangchaoyu/ImitatioRecyclers/blob/master/QQ%E5%9B%BE%E7%89%8720180614112609.gif) 
 
-![img](https://github.com/tangchaoyu/ImitatioRrecyclers/blob/master/QQ%E5%9B%BE%E7%89%8720180613111150.gif) 
+![img](https://github.com/tangchaoyu/ImitatioRecyclers/blob/master/QQ%E5%9B%BE%E7%89%8720180614112614.gif) 
 
-![img](https://github.com/tangchaoyu/ImitatioRrecyclers/blob/master/QQ%E5%9B%BE%E7%89%8720180613164949.gif) 
+![img](https://github.com/tangchaoyu/ImitatioRecyclers/blob/master/QQ%E5%9B%BE%E7%89%8720180614112618.gif) 
 
 使用说明：
  
@@ -25,7 +25,7 @@
   }
   
 	dependencies {
-		implementation 'com.github.tangchaoyu:ImitatioRrecyclers:1.0.1'
+		implementation 'com.github.tangchaoyu:ImitatioRecyclers:1.0.1'
 
 	}
 
@@ -33,19 +33,19 @@
  ## 一级列表
  
  ```
- <com.myrecyclers.tcy.imitationrecyclerslibrary.MyPullSwipeRefresh
+ <com.myrecyclers.tcy.imitatiolibrary.MyPullSwipeRefresh
         android:id="@+id/pullSwipeRefresh"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         >
-        <com.myrecyclers.tcy.imitationrecyclerslibrary.MyPullRecyclerView
+        <com.myrecyclers.tcy.imitatiolibrary.MyPullRecyclerView
             android:id="@+id/recyclerView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             >
-        </com.myrecyclers.tcy.imitationrecyclerslibrary.MyPullRecyclerView>
+        </com.myrecyclers.tcy.imitatiolibrary.MyPullRecyclerView>
 
-    </com.myrecyclers.tcy.imitationrecyclerslibrary.MyPullSwipeRefresh>
+    </com.myrecyclers.tcy.imitatiolibrary.MyPullSwipeRefresh>
 ```
  
  XXXDelegate extends BaseDelegate<Demo1> 指定泛型（你自己的定义的实体类对象）
@@ -110,7 +110,7 @@ adapter.setOnItemClickListener(new BaseRecyclerAdapter.OnItemClickListener()
  
 
 ```
- <com.myrecyclers.tcy.imitationrecyclerslibrary.MyPullSwipeRefresh
+ <com.myrecyclers.tcy.imitatiolibrary.MyPullSwipeRefresh
         android:id="@+id/pullSwipeRefresh"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -120,7 +120,7 @@ adapter.setOnItemClickListener(new BaseRecyclerAdapter.OnItemClickListener()
             android:layout_height="match_parent"
             app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-            <com.myrecyclers.tcy.imitationrecyclerslibrary.ExpandablePullRecyclerView
+            <com.myrecyclers.tcy.imitatiolibrary.ExpandablePullRecyclerView
                 android:id="@+id/recyclerView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -128,10 +128,10 @@ adapter.setOnItemClickListener(new BaseRecyclerAdapter.OnItemClickListener()
                 app:divider_decoration_width="0"
                 >
 
-            </com.myrecyclers.tcy.imitationrecyclerslibrary.ExpandablePullRecyclerView>
+            </com.myrecyclers.tcy.imitatiolibrary.ExpandablePullRecyclerView>
 		
         </FrameLayout>
-    </com.myrecyclers.tcy.imitationrecyclerslibrary.MyPullSwipeRefresh>
+    </com.myrecyclers.tcy.imitatiolibrary.MyPullSwipeRefresh>
 ```
 XXXDelegate extends ExpandableBaseDelegate<Demo2Group> 指定泛型（你自己的定义的实体类对象）
 
@@ -244,7 +244,7 @@ setClickGroup方法默认为true 设为flase 点击没有收缩效果
 ```
 ## 二级分组列表悬停效果
   ```
- <com.myrecyclers.tcy.imitationrecyclerslibrary.MyPullSwipeRefresh
+ <com.myrecyclers.tcy.imitatiolibrary.MyPullSwipeRefresh
         android:id="@+id/pullSwipeRefresh"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -254,7 +254,7 @@ setClickGroup方法默认为true 设为flase 点击没有收缩效果
             android:layout_height="match_parent"
             app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-            <com.myrecyclers.tcy.imitationrecyclerslibrary.ExpandablePullRecyclerView
+            <com.myrecyclers.tcy.imitatiolibrary.ExpandablePullRecyclerView
                 android:id="@+id/recyclerView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -262,7 +262,7 @@ setClickGroup方法默认为true 设为flase 点击没有收缩效果
                 app:divider_decoration_width="0"
                 >
 
-            </com.myrecyclers.tcy.imitationrecyclerslibrary.ExpandablePullRecyclerView>
+            </com.myrecyclers.tcy.imitatiolibrary.ExpandablePullRecyclerView>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -273,7 +273,7 @@ setClickGroup方法默认为true 设为flase 点击没有收缩效果
             </LinearLayout>
 
         </FrameLayout>
-    </com.myrecyclers.tcy.imitationrecyclerslibrary.MyPullSwipeRefresh>
+    </com.myrecyclers.tcy.imitatiolibrary.MyPullSwipeRefresh>
 
 ```
 如果有头部 把头部布局和group布局放在一个线性布局内 如果没有头部 就直接引用你的group布局
