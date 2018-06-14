@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.myrecyclers.tcy.imitatiolibrary.MyPullSwipeRefresh
+        android:id="@+id/pullSwipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <com.myrecyclers.tcy.imitatiolibrary.ExpandablePullRecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:divider_decoration_width="0"
+            app:divider_decoration_height="0"
+            >
+        </com.myrecyclers.tcy.imitatiolibrary.ExpandablePullRecyclerView>
+
+
+    </com.myrecyclers.tcy.imitatiolibrary.MyPullSwipeRefresh>
+
+
+</android.support.constraint.ConstraintLayout>

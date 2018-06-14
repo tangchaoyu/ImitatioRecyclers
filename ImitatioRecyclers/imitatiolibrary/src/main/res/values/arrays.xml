@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--自定义RecyclerView-->
+    <declare-styleable name="MyRecyclerView">
+        <attr name="layoutManagerType" format="enum">
+            <enum name="linear_vertical" value="0"/>
+            <enum name="linear_horizontal" value="1"/>
+            <enum name="grid_layout" value="2"/>
+            <enum name="staggered_grid_layout" value="3"/>
+        </attr>
+        <attr name="spanCount" format="integer"/>
+        <attr name="divider_decoration_height" format="integer"/>
+        <attr name="divider_decoration_width" format="integer"/>
+        <attr name="divider_decoration_color" format="integer"/>
+        <attr name="divider_decoration_drawable" format="integer"/>
+
+    </declare-styleable>
+
+</resources>
