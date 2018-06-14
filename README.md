@@ -1,0 +1,2 @@
+# ImitatioRecyclers
+一个简单通用的recyclerView,主要实现普通列表和分组列表的大部分需求效果
